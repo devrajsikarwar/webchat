@@ -1,0 +1,65 @@
+page-login {
+    .background {
+        background : #efe7dd  url('../../assets/imgs/bg.jpg')!important;
+    }
+    ion-card-header h1{
+        color: #057965 !important;
+    }
+    .scroll-content {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        overflow-x: hidden;
+        overflow-y: hidden
+    }
+    ion-card.card {
+        box-shadow: none;
+
+            background : #efe7dd  url('../../assets/imgs/bg.jpg')!important;
+
+        border-radius: 5px;
+    }
+  
+
+    .list > .item-block:first-child {
+        border: medium none;
+    }
+
+    .item {
+        margin-bottom: 10px;
+        // background: rgba(255, 255, 255, 0.5);
+        border: medium none;
+
+
+
+    }
+
+    .icon {
+        padding-right: 10px;
+    }
+
+    .bottom {
+        bottom: 0;
+    }
+
+    input {
+       
+        width: 100%;
+        display: block;
+        border: none;
+        padding: 10px 0;
+        border-bottom: solid 1px #1abc9c;
+        -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+        background-position: -200px 0;
+        background-size: 200px 100%;
+        background-repeat: no-repeat;
+        color: #0e6252;
+      }
+  
+
+    }

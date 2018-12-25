@@ -1,0 +1,8 @@
+{
+  "name": "webchationic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "9ba3de2c"
+}

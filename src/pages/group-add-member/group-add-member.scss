@@ -1,0 +1,40 @@
+page-group-add-member {
+    .avatar{
+        float: left;
+    }
+    .title{
+        padding: 15px;
+    }
+    ion-badge{
+        padding: 10px 13px !important;
+        text-align: center;
+        display: inline-block;
+        min-width: 10px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 50% !important;
+    }
+    .checkbox-md .checkbox-checked .checkbox-inner {
+        left: 14px;
+        top: 8px;
+        position: absolute;
+        width: 9px;
+        height: 15px;
+    
+    }
+    .checkbox-md .checkbox-icon {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    
+    }
+    .input-cover{
+        background: rgba(158, 158, 158, 0.2);
+    }
+    .item-md.item-block .item-inner {
+        border-bottom: none !important;
+    }
+}

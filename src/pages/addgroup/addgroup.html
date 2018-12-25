@@ -1,0 +1,65 @@
+<!--
+  Generated template for the AddgroupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+  <ion-navbar color="hcolor" >
+      <ion-title >
+          <ion-item color="hcolor">
+              <ion-avatar item-left (click)="selectIcon()">
+                  <img width="50%" src="{{groupIcon}}">
+                </ion-avatar>
+                <h2>New Group</h2>
+          </ion-item>
+          </ion-title>
+   
+    <!-- <ion-badge color="dgcolor">{{count}}</ion-badge> -->
+  </ion-navbar>
+
+</ion-header>
+
+ <!-- <ion-content padding>
+      <ion-list no-lines>
+        <ion-item-sliding *ngFor="let item of myfriends">
+          <ion-item >
+          <ion-avatar item-left>
+            <img src="{{item.photoURL}}">
+          </ion-avatar>
+          <h4>{{item.displayName}}</h4>
+          </ion-item>
+         
+        </ion-item-sliding>
+      </ion-list>
+</ion-content>   -->
+<ion-content >
+    <ion-item>
+
+       <ion-input [(ngModel)]="groupname" placeholder="Enter Group Name ..."></ion-input> 
+      
+    </ion-item>    
+      <ion-list no-lines *ngFor="let item of myfriends">
+      
+          <ion-item>
+              <ion-label>
+                  <ion-avatar item-left class="avatar">
+                      <img width="50%" src="{{item.photoURL}}">
+                    </ion-avatar>
+                  <h3 class="title">{{item.displayName}}</h3>
+                
+
+              </ion-label>
+              <ion-checkbox color="dgcolor" (ionChange)="selectfriends($event,item)"></ion-checkbox>
+            </ion-item>
+        
+      </ion-list>
+</ion-content>  
+<ion-footer ion-fixed>    
+    <ion-buttons>
+        <button  [disabled]="(groupname==null || groupname.trim()=='') || selectedFriend.length==0" full ion-button color="dgcolor" (click)="creategroup()">
+        Create
+        </button>
+      </ion-buttons>
+  </ion-footer> 

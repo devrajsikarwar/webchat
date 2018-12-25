@@ -1,0 +1,30 @@
+<!--
+  Generated template for the VideocallPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="hcolor">
+    <ion-title>Video Call</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div id="remote">
+
+</div>
+<div id="mini">
+ 
+  
+</div>
+</ion-content>
+<ion-footer>
+  <ion-buttons>
+    <button ion-button block *ngIf="showAccept==true" (click)="acceptCall()" color="success" >Accept</button>
+    <button ion-button block color="danger" (click)="HangUp()">Hang Up</button>
+  </ion-buttons>
+</ion-footer>

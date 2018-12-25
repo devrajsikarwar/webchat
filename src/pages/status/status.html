@@ -1,0 +1,56 @@
+<!--
+  Generated template for the StatusPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="hcolor">
+    <ion-title>Status</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list no-lines>
+      
+      <ion-item-sliding >
+        <ion-item>
+        <ion-avatar item-left>
+          <img src="">
+        </ion-avatar>
+        <h4>My Status</h4>
+        <p>Tap to Add your status</p>
+        </ion-item>
+      
+    
+      
+      </ion-item-sliding>
+    </ion-list>
+
+
+  <ion-list no-lines>
+      <ion-list-header>
+          Recent Updates
+        </ion-list-header>
+    <ion-item-sliding *ngFor="let item of userStatus" >
+     
+      <ion-item *ngIf="item.status.length>0" (tap)="OnStatusTap(item)">
+      <ion-avatar item-left>
+        <img [src]="item.photoURL">
+      </ion-avatar>
+      <h4>{{item.displayName}}</h4>
+      </ion-item>
+     
+      
+    </ion-item-sliding>
+  </ion-list>
+  <ion-fab class="fab1">
+      <button  color="light" (tap)="openmodal()" ion-fab mini icon-only fab-content-margin><ion-icon color="hcolor" name="create"></ion-icon></button>
+      <button  color="secondary" (tap)="opensheet()" ion-fab mini icon-only fab-content-margin><ion-icon name="camera"></ion-icon></button>
+    </ion-fab>
+  
+</ion-content>

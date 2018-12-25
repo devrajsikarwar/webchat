@@ -1,0 +1,30 @@
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header >
+      <h1 >Login</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines [formGroup]="userform">
+        <div class="spacer" style="height: 10px;"></div>
+    
+          <input type="email" placeholder="Email" formControlName="email"/>
+       
+        <div class="spacer" style="height: 5px;"></div>
+       
+          <input type="password" placeholder="Password" formControlName="password"/>
+        
+        <div class="spacer" style="height: 10px;"></div>
+        <button ion-button block round  color="hcolor" [disabled]="!userform.valid" (click)="signin()">Login</button>
+           
+        <div class="spacer" style="height: 10px;"></div>
+        <button ion-button block round  color="hcolor"  (click)="forgotPassword()">Forgot password</button>    
+        <div class="spacer" style="height: 10px; "></div>
+        <p style="color : #057965">OR</p>
+        <div class="spacer" style="height: 10px;"></div>
+        <button ion-button block outline  round  color="hcolor" (click)="SignUp()">Don't have an account? Sign up</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+
+</ion-content>
